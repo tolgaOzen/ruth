@@ -1,4 +1,10 @@
 # ruth
+
+![language](https://img.shields.io/badge/language-go-%236AD7E4.svg)
+![GitHub](https://img.shields.io/github/license/tolgaOzen/serverBot.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/tolgaOzen/serverBot.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/tolgaOzen/serverBot.svg)
+
 Use of try, catch, finally in Golang using the same syntax as java / python / php
 
 <p align="center">
@@ -29,10 +35,69 @@ Use of try, catch, finally in Golang using the same syntax as java / python / ph
 
 
 ```
+
 ## Response
 ```
 index error
 finally
+```
+
+## Upper Exception Catch
+
+```go
+
+  
+	var array []string
+    
+    ruth.Try(func() {
+    
+    	fmt.Print(array[0])
+    
+    }).Catch(func(e ruth.Exception) {
+    
+    	panic("test")
+    
+    }).Catch(func(e ruth.Exception) {
+    		
+    	fmt.Println(e.Error)
+    
+    })
+
+
+```
+## Response
+```
+test
+```
+
+
+## Try Again
+
+```go
+
+  
+	var array []string
+
+	ruth.Try(func() {
+
+		fmt.Println(array[0])
+
+	}).Catch(func(e ruth.Exception) {
+
+		array = append(array, "array element")
+
+	}).TryAgain().Finally(func() {
+		
+		fmt.Println("no error")
+		
+	})
+
+
+```
+## Response
+```
+array element
+no error
 ```
 
 
