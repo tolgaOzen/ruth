@@ -1,14 +1,12 @@
 # ruth
 
+<img align="right" width="159px" src="https://user-images.githubusercontent.com/39353278/72227565-313f4380-35af-11ea-8fc6-c33a5945b867.png">
+
 ![GitHub top language](https://img.shields.io/github/languages/top/tolgaOzen/ruth?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/tolgaOzen/ruth?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/tolgaOzen/ruth?style=flat-square)
 
 Use of try, catch, finally in Golang using the same syntax as java / python / php
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/39353278/72227565-313f4380-35af-11ea-8fc6-c33a5945b867.png" alt="ruth" width="300">
-</p>
 
 ## Example
 
