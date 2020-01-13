@@ -12,7 +12,7 @@ Use of try, catch, finally in Golang using the same syntax as java / python / ph
 
 ## Installation
 
-```go
+```
 go get github.com/tolgaOzen/ruth
 ```
 
