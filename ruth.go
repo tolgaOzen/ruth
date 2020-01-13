@@ -10,9 +10,9 @@ type Section struct {
 	innerTry     func()
 }
 
-func Try(innerTry func()) (section Section) {
+func Try(innerTry func()) (section *Section) {
 
-	section = Section{innerTry: innerTry}
+	section = &Section{innerTry: innerTry}
 
 	defer func() {
 		exception := Exception{}
@@ -23,10 +23,9 @@ func Try(innerTry func()) (section Section) {
 	section.innerTry()
 
 	return
-
 }
 
-func (s Section) Catch(innerCatch func(e Exception)) (section Section) {
+func (s *Section) Catch(innerCatch func(e Exception)) (section *Section) {
 
 	if s.Exception.Error != nil {
 
@@ -49,7 +48,7 @@ func (s Section) Catch(innerCatch func(e Exception)) (section Section) {
 }
 
 
-func (s Section) TryAgain() (section Section) {
+func (s *Section) TryAgain() (section *Section) {
 
 	defer func() {
 		if err := recover(); err != nil {
@@ -63,6 +62,6 @@ func (s Section) TryAgain() (section Section) {
 }
 
 
-func (s Section) Finally(innerFinally func()) {
+func (s *Section) Finally(innerFinally func()) {
 	innerFinally()
 }
