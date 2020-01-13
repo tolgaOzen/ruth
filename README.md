@@ -22,21 +22,21 @@ go get github.com/tolgaOzen/ruth
 ```go
 
   
-	var array []string
+    var array []string
 
-	ruth.Try(func() {
+    ruth.Try(func() {
 
-		fmt.Print(array[0])
+        fmt.Print(array[0])
 
-	}).Catch(func(e ruth.Exception) {
+    }).Catch(func(e ruth.Exception) {
 
-		fmt.Println("index error")
+        fmt.Println("index error")
 
-	}).Finally(func() {
+    }).Finally(func() {
 		
-		fmt.Println("finally")
+        fmt.Println("finally")
 		
-	})
+    })
 
 
 ```
@@ -52,19 +52,19 @@ finally
 ```go
 
   
-	var array []string
+    var array []string
     
     ruth.Try(func() {
     
-    	fmt.Print(array[0])
+        fmt.Print(array[0])
     
     }).Catch(func(e ruth.Exception) {
     
-    	panic("test")
+        panic("test")
     
     }).Catch(func(e ruth.Exception) {
     		
-    	fmt.Println(e.Error)
+        fmt.Println(e.Error)
     
     })
 
@@ -81,21 +81,21 @@ test
 ```go
 
   
-	var array []string
+    var array []string
 
-	ruth.Try(func() {
+    ruth.Try(func() {
 
-		fmt.Println(array[0])
+        fmt.Println(array[0])
 
-	}).Catch(func(e ruth.Exception) {
+    }).Catch(func(e ruth.Exception) {
 
-		array = append(array, "array element")
+        array = append(array, "array element")
 
-	}).TryAgain().Finally(func() {
+    }).TryAgain().Finally(func() {
 		
-		fmt.Println("no error")
+        fmt.Println("no error")
 		
-	})
+    })
 
 
 ```
