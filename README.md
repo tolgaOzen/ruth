@@ -1,9 +1,8 @@
 # ruth
 
-![language](https://img.shields.io/badge/language-go-%236AD7E4.svg)
-![GitHub](https://img.shields.io/github/license/tolgaOzen/serverBot.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/tolgaOzen/serverBot.svg)
-
+![GitHub top language](https://img.shields.io/github/languages/top/tolgaOzen/ruth?style=flat-square)
+![GitHub](https://img.shields.io/github/license/tolgaOzen/ruth?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/tolgaOzen/ruth?style=flat-square)
 
 Use of try, catch, finally in Golang using the same syntax as java / python / php
 
