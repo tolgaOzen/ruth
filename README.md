@@ -1,6 +1,6 @@
 # ruth
 
-<img align="right" width="159px" src="https://user-images.githubusercontent.com/39353278/72227565-313f4380-35af-11ea-8fc6-c33a5945b867.png">
+<img align="right" width="200px" src="https://user-images.githubusercontent.com/39353278/72227565-313f4380-35af-11ea-8fc6-c33a5945b867.png">
 
 ![GitHub top language](https://img.shields.io/github/languages/top/tolgaOzen/ruth?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/tolgaOzen/ruth?style=flat-square)
