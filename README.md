@@ -1,6 +1,6 @@
 # ruth
 
-<img align="right" width="200px" src="https://user-images.githubusercontent.com/39353278/72227565-313f4380-35af-11ea-8fc6-c33a5945b867.png">
+<img align="right" width="160px" src="https://user-images.githubusercontent.com/39353278/72250770-74300400-360d-11ea-9f48-42b716aa5cee.png">
 
 ![GitHub top language](https://img.shields.io/github/languages/top/tolgaOzen/ruth?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/tolgaOzen/ruth?style=flat-square)
@@ -8,8 +8,16 @@
 
 Use of try, catch, finally in Golang using the same syntax as java / python / php
 
-## Example
 
+
+## Installation
+
+```go
+go get github.com/tolgaOzen/ruth
+```
+
+
+## Example
 
 ```go
 
